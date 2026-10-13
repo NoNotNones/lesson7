@@ -18,9 +18,9 @@ jobs:
         id: hello-world-action
         uses: actions/hello-world-javascript-action@main
         with:
-          who-to-greet: " TATQTM " 
+          who-to-greet: "TATQTM" 
       - name: time
-        run: echo "'greeting time:' ${{ steps.hello-world-action.outputs }}"
+        run: echo "'greeting time:' ${{ steps.hello-world-action.outputs.time }}"
       - name: docker action
         uses: docker://hello-world:latest
   
